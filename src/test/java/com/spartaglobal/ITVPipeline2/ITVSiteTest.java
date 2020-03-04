@@ -17,11 +17,12 @@ public class ITVSiteTest {
     @BeforeClass
     public static void setup(){
         //Enter your own driver path and remember to change it before running tests
-        SeleniumConfig chromeDriverConfig = new SeleniumConfig("chrome", "chromedriver path");
+        SeleniumConfig chromeDriverConfig = new SeleniumConfig("chrome", "C:\\Users\\danaa\\Downloads\\chromedriver_win32\\\\chromedriver.exe");
+        //C:\Users\danaa\Downloads\chromedriver_win32\\chromedriver.exe
         itvSite = new ITVSite(chromeDriverConfig.getDriver());
 
         itvSite.itvHomepage();
-        //   itvSite.itvSignin().clickOnSignin();
+        itvSite.itvSignin();
 
     }
 
