@@ -23,6 +23,10 @@ public class ITVSiteTest {
 
         itvSite.itvHomepage();
         itvSite.itvSignin();
+        itvSite.itvSignin().inputUsername("test@test.com");
+        itvSite.itvSignin().inputPassword("itvtest");
+        itvSite.itvSignin().clickSubmitButton();
+        itvSite.itvSignin().getUsernameAndPasswordErrorText();
 
     }
 
