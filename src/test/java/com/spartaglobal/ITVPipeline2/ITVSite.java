@@ -19,12 +19,12 @@ public class ITVSite {
     }
 
     public  ITVHomepage itvHomepage(){
+
         return itvHomepage.goToHomepage().clickCookieButton();
     }
 
     public ITVSignin itvSignin(){
+
         return itvSignin.clickOnSignin();
     }
-
-
 }
