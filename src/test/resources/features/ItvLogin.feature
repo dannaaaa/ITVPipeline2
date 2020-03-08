@@ -7,3 +7,9 @@ Feature: Login
     When I input an invalid email
     And an invalid password
     Then I receive a valid error
+
+  Scenario: I successfully login when using correct credentials
+    Given I am on the sign in page
+    When I input a valid email
+    And a valid password
+    Then I will be signed into my ITV account
